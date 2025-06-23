@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseplant Dropdown Menu</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa;
+        }
+        .menu {
+            background-color: #4caf50;
+            padding: 15px;
+            border: 3px dotted #2e7d32;
+            margin-bottom: 20px;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu > ul > li {
+            position: relative;
+            margin-right: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        .menu > ul > li > a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .submenu {
+            position: absolute;
+            visibility: hidden;
+            background-color: #81c784;
+            border: 2px solid #388e3c;
+            min-width: 150px;
+            top: 100%;
+            left: 0;
+            transition: visibility 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .menu > ul > li:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+        }
+        .submenu li {
+            padding: 10px;
+            font-family: 'Georgia', serif;
+            color: #1b5e20;
+        }
+        .submenu li a {
+            color: #1b5e20;
+            text-decoration: none;
+        }
+        .submenu li a:hover {
+            color: #ff9800;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px dashed #4caf50;
+        }
+        .content p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Care Tips</a>
+                <ul class="submenu">
+                    <li><a href="#">Watering Basics</a></li>
+                    <li><a href="#">Light Needs</a></li>
+                    <li><a href="#">Humidity Tips</a></li>
+                    <li><a href="#">Fertilizing Schedule</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Plant Types</a>
+                <ul class="submenu">
+                    <li><a href="#">Pothos Varieties</a></li>
+                    <li><a href="#">Snake Plants</a></li>
+                    <li><a href="#">Monstera</a></li>
+                    <li><a href="#">Peace Lily</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tools</a>
+                <ul class="submenu">
+                    <li><a href="#">Pruning Shears</a></li>
+                    <li><a href="#">Watering Cans</a></li>
+                    <li><a href="#">Potting Soil</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Maintenance</a>
+                <ul class="submenu">
+                    <li><a href="#">Repotting Guide</a></li>
+                    <li><a href="#">Pest Control</a></li>
+                    <li><a href="#">Leaf Cleaning</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Houseplant Care Guide</h2>
+        <p>Houseplants bring life and freshness to any indoor space, but proper care is essential to keep them thriving. Watering is a critical factor—most plants like pothos prefer their soil to dry out slightly between waterings, typically every 1-2 weeks depending on light and humidity. Light needs vary: low-light plants like snake plants can handle shady corners, while monstera thrives in bright, indirect sunlight. Humidity is another key element, especially for tropical species—consider using a pebble tray or humidifier if your home is dry.</p>
+        <p>Fertilizing should be done sparingly, about once a month during the growing season with a balanced, water-soluble fertilizer. Repotting becomes necessary when roots outgrow their pots, usually every 1-2 years, and it’s a great opportunity to refresh the soil. Pest control is vital too—watch for spider mites or aphids and treat with neem oil or insecticidal soap. Regularly cleaning leaves with a damp cloth removes dust, helping plants photosynthesize efficiently. With these tips, your houseplants can flourish year-round.</p>
+        <p><strong>Tip:</strong> Observe your plants closely—yellowing leaves might indicate overwatering, while brown tips suggest low humidity. Adjust care as needed!</p>
+        <img src="images/pothos_clippings.jpg" alt="Pothos cuttings in water">
+    </div>
+</body>
+</html>
